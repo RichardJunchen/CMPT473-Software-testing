@@ -1,0 +1,5 @@
+[
+  {"string": "This is test6 file"},
+  {"string": "no empty row"},
+  {"string": "with a \"quotes and \\backslash\\"}
+]

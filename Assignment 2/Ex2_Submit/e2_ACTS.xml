@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<System name="e2_ACTS">
+  <Parameters>
+    <Parameter id="0" name="EMPTY_FILE" type="2">
+      <values>
+        <value>true</value>
+        <value>false</value>
+      </values>
+      <basechoices />
+      <invalidValues />
+    </Parameter>
+    <Parameter id="1" name="BACK_SLASH_AT_END" type="2">
+      <values>
+        <value>true</value>
+        <value>false</value>
+      </values>
+      <basechoices />
+      <invalidValues />
+    </Parameter>
+    <Parameter id="2" name="INCLUDE_EMPTY_ROW" type="2">
+      <values>
+        <value>true</value>
+        <value>false</value>
+      </values>
+      <basechoices />
+      <invalidValues />
+    </Parameter>
+    <Parameter id="3" name="HAS_QUOTE" type="2">
+      <values>
+        <value>true</value>
+        <value>false</value>
+      </values>
+      <basechoices />
+      <invalidValues />
+    </Parameter>
+    <Parameter id="4" name="CMD_Q_ESCAPED_QUOTE" type="2">
+      <values>
+        <value>true</value>
+        <value>false</value>
+      </values>
+      <basechoices />
+      <invalidValues />
+    </Parameter>
+    <Parameter id="5" name="CMD_q_QUOTE" type="2">
+      <values>
+        <value>true</value>
+        <value>false</value>
+      </values>
+      <basechoices />
+      <invalidValues />
+    </Parameter>
+    <Parameter id="6" name="CMD_e_EOL" type="2">
+      <values>
+        <value>true</value>
+        <value>false</value>
+      </values>
+      <basechoices />
+      <invalidValues />
+    </Parameter>
+    <Parameter id="7" name="CMD_d_DELIMITER" type="2">
+      <values>
+        <value>true</value>
+        <value>false</value>
+      </values>
+      <basechoices />
+      <invalidValues />
+    </Parameter>
+  </Parameters>
+  <OutputParameters />
+  <Relations />
+  <Constraints>
+    <Constraint text="EMPTY_FILE = True  =&gt; BACK_SLASH_AT_END = False &amp;&amp;  INCLUDE_EMPTY_ROW = False &amp;&amp;  HAS_QUOTE = False &amp;&amp;  CMD_Q_ESCAPED_QUOTE = False &amp;&amp;  CMD_q_QUOTE = False &amp;&amp;  CMD_e_EOL = False&amp;&amp;  CMD_d_DELIMITER = False">
+      <Parameters>
+        <Parameter name="EMPTY_FILE" />
+        <Parameter name="BACK_SLASH_AT_END" />
+        <Parameter name="INCLUDE_EMPTY_ROW" />
+        <Parameter name="HAS_QUOTE" />
+        <Parameter name="CMD_Q_ESCAPED_QUOTE" />
+        <Parameter name="CMD_q_QUOTE" />
+        <Parameter name="CMD_e_EOL" />
+        <Parameter name="CMD_d_DELIMITER" />
+      </Parameters>
+    </Constraint>
+  </Constraints>
+  <Testset doi="2">
+    <Testcase TCNo="0">
+      <Value>1</Value>
+      <Value>true</Value>
+      <Value>false</Value>
+      <Value>false</Value>
+      <Value>false</Value>
+      <Value>false</Value>
+      <Value>false</Value>
+      <Value>false</Value>
+      <Value>false</Value>
+    </Testcase>
+    <Testcase TCNo="1">
+      <Value>2</Value>
+      <Value>false</Value>
+      <Value>true</Value>
+      <Value>true</Value>
+      <Value>true</Value>
+      <Value>true</Value>
+      <Value>true</Value>
+      <Value>true</Value>
+      <Value>true</Value>
+    </Testcase>
+    <Testcase TCNo="2">
+      <Value>3</Value>
+      <Value>false</Value>
+      <Value>false</Value>
+      <Value>false</Value>
+      <Value>true</Value>
+      <Value>false</Value>
+      <Value>true</Value>
+      <Value>false</Value>
+      <Value>true</Value>
+    </Testcase>
+    <Testcase TCNo="3">
+      <Value>4</Value>
+      <Value>false</Value>
+      <Value>false</Value>
+      <Value>true</Value>
+      <Value>false</Value>
+      <Value>true</Value>
+      <Value>false</Value>
+      <Value>true</Value>
+      <Value>false</Value>
+    </Testcase>
+    <Testcase TCNo="4">
+      <Value>5</Value>
+      <Value>false</Value>
+      <Value>true</Value>
+      <Value>false</Value>
+      <Value>false</Value>
+      <Value>false</Value>
+      <Value>true</Value>
+      <Value>true</Value>
+      <Value>false</Value>
+    </Testcase>
+    <Testcase TCNo="5">
+      <Value>6</Value>
+      <Value>false</Value>
+      <Value>true</Value>
+      <Value>false</Value>
+      <Value>true</Value>
+      <Value>true</Value>
+      <Value>false</Value>
+      <Value>false</Value>
+      <Value>true</Value>
+    </Testcase>
+    <Testcase TCNo="6">
+      <Value>7</Value>
+      <Value>false</Value>
+      <Value>false</Value>
+      <Value>true</Value>
+      <Value>false</Value>
+      <Value>false</Value>
+      <Value>true</Value>
+      <Value>false</Value>
+      <Value>true</Value>
+    </Testcase>
+    <Testcase TCNo="7">
+      <Value>8</Value>
+      <Value>false</Value>
+      <Value>true</Value>
+      <Value>false</Value>
+      <Value>true</Value>
+      <Value>false</Value>
+      <Value>true</Value>
+      <Value>true</Value>
+      <Value>false</Value>
+    </Testcase>
+  </Testset>
+  <Header>
+    <Value />
+    <Value>EMPTY_FILE</Value>
+    <Value>BACK_SLASH_AT_END</Value>
+    <Value>INCLUDE_EMPTY_ROW</Value>
+    <Value>HAS_QUOTE</Value>
+    <Value>CMD_Q_ESCAPED_QUOTE</Value>
+    <Value>CMD_Q_QUOTE</Value>
+    <Value>CMD_E_EOL</Value>
+    <Value>CMD_D_DELIMITER</Value>
+  </Header>
+  <Graph-Data>
+    <Value>0.26666668</Value>
+    <Value>0.53333336</Value>
+    <Value>0.6857143</Value>
+    <Value>0.82857144</Value>
+    <Value>0.9047619</Value>
+    <Value>0.96190476</Value>
+    <Value>0.9904762</Value>
+    <Value>1.0</Value>
+  </Graph-Data>
+  <Stat-Data>
+    <ExecutionTime>0.086</ExecutionTime>
+    <MaxDomainSize>2</MaxDomainSize>
+    <MinDomainSize>2</MinDomainSize>
+    <TotalNoOfCombination>105</TotalNoOfCombination>
+    <TotalNoOfTests>8</TotalNoOfTests>
+    <Algorithm>IPOG</Algorithm>
+  </Stat-Data>
+</System>
+
